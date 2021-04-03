@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 import { Given } from 'cypress-cucumber-preprocessor/steps'
 
 Given('i click on logout button', async () => {

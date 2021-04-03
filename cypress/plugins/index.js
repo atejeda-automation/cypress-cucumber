@@ -8,10 +8,8 @@ require('dotenv').config()
 // eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
   on('file:preprocessor', cucumber())
-
-  //config.env = config.env || {}
+  config.env.baseUrl = process.env.BASE_URL || 'http://localhost:3000'
   config.env.userName = process.env.USER_NAME || 'DefaultUser'
   config.env.password = process.env.PASSWORD || 'DefaultPassword'
-  console.log(config)
   return config
 }
