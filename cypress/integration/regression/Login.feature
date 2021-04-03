@@ -13,3 +13,8 @@ Examples:
     | /login | FakeUser | FakePassword | Your username is invalid! |
     | /login | tomsmith | FakePassword | Your password is invalid! |
     | /login | tomsmith | SuperSecretPassword! | You logged into a secure area! |
+
+Scenario: As loggin user, i want to log out
+
+Given i click on logout button
+Then i can see the logout alert with logout text
