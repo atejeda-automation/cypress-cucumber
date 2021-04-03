@@ -1,0 +1,34 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Project to learn how to implementing cucumber with cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:regression": "cypress run -e TAGS=\"@regression\"",
+    "report": "node cucumber-html-report.js"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "keywords": [
+    "automaion",
+    "cypress",
+    "e2e",
+    "cucumber"
+  ],
+  "author": "Alfred Tejeda",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.8.0",
+    "cypress-cucumber-preprocessor": "^4.0.3",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  }
+}

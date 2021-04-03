@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://the-internet.herokuapp.com",
+  "testFiles": "**/*.{feature,features}",
+  "ignoreTestFiles": ["*.js", "*.ts", "*.md"]
+}
