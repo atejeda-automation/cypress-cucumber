@@ -1,6 +1,6 @@
 name: Cypress e2e testing
 on:
-  branches: ['master']
+  branches: ['main']
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
