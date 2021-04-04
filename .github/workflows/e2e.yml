@@ -1,7 +1,11 @@
 name: End-to-end tests
 on:
+  pull_request:
+    branches: main
   push:
-    branches: [main]
+    branches: main
+  schedule:
+    - cron: "0 17 * * 1-5"
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
