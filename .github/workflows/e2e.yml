@@ -1,13 +1,14 @@
-name: Cypress e2e testing
+name: End-to-end tests
 on:
-  branches: ['main']
+  push:
+    branches: [main]
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v2
+        with:
+          test: npm test
