@@ -4,10 +4,9 @@
   "description": "Project to learn how to implementing cucumber with cypress",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
+    "test": "cypress run --browser chrome --headless",
     "cypress:open": "cypress open",
-    "cypress:regression": "cypress run -e TAGS=\"@regression\"",
-    "report": "node cucumber-html-report.js"
+    "cypress:regression": "cypress run --browser chrome --headless -e TAGS=\"@regression\""
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,

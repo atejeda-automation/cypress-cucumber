@@ -15,4 +15,4 @@ Proyecto de automatización con Cypress utilizando Cucumber, en este proyecto ta
 1. Clonar el proyecto
 2. Instalar las depedencias `npm i` o `npm install`
 3. Ejecución de las pruebas: `npm test`
-4. Generar reporte: `npm run report`
+4. Generar reporte: el reporte se genera de manera automática al finalizar la ejecución de los tests (se crea un nuevo directorio en la raíz llamado reports y dentro de él se encuentra el archivo `.html`)
